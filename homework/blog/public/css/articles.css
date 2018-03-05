@@ -1,0 +1,739 @@
+/* *
+* The css file of Beijing Jinjiuyuan Technology Co. Ltd..
+*
+* @copyright   Copyright 2009-2017 北京金九源科技有限公司(Beijing Jinjiuyuan Technology Co. Ltd.)
+* @license
+* @author      北京金九源科技有限公司
+* @package     Beijing Jinjiuyuan Technology Co. Ltd.
+* @version     $articles$
+* @link
+* */
+/*链接文章内页样式*/
+.Articles-box {
+	padding-bottom: 55px;
+	border-bottom: 1px solid #dedcdc;
+	font: 400 18px/1.62 Georgia, "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+}
+.Articles-tit h3 {
+	font-size: 2em;
+	line-height: 1.2em;
+	text-align: center;
+	display: block;
+}
+.Articles-tit span {
+	display: inline-block;
+	margin-top: 10px;
+	color: #6d6c6c;
+	width: 100%;
+	text-align: center;
+}
+.Articles-tit span b {
+	font-weight: normal;
+	color: #f4645f;
+	margin-right: 5px;
+}
+.Articles-box {
+	margin-top: 20px;
+}
+.Articles .cat {
+	padding: 15px 20px 15px 0;
+	text-align: right;
+}
+.Articles .cat span {
+	font-size: 14px;
+	color: #535353;
+	margin-left: 20px;
+	transition: all ease .4s;
+}
+.Articles .cat span:hover, .Articles .cat span:hover a {
+	color: #f46560;
+}
+.Articles .cat span i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.Articles .cat span a {
+	vertical-align: middle;
+	color: #535353;
+}
+/*留言*/
+/*.My-message {
+}
+.My-message-btn {
+  text-align: right;
+  margin-top: 10px;
+}
+.My-message ul li {
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+.My-message ul li img {
+  border-radius: 50%;
+}
+.My-message ul li h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.My-message ul li p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.My-message ul li a i {
+  vertical-align: middle;
+  margin-right: 5px;
+}*/
+
+/*文章管理*/
+.tab .nav-tabs {
+	border-bottom: none;
+	position: relative;
+	padding-right: 0
+}
+.tab .nav-tabs li {
+	z-index: 1;
+	width: 100%;
+	position: relative;
+}
+.tab .nav-tabs li a {
+	display: block;
+	padding: 0;
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	background: #dddddd;
+	padding: 25px 0;
+	text-align: center;
+}
+.tab .nav-tabs li a i {
+	font-size: 2em;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.tab .nav-tabs li.active a, .tab .nav-tabs li a:hover {
+	color: #de5c57;
+	border: 0;
+	border-radius: 0;
+	background: #fff;
+	border-left: 4px solid #de5c57;
+}
+.tab .nav-tabs li.active a:after, .tab .nav-tabs li a:hover:after {
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 8px solid #de5c57;
+	border-bottom: 5px solid transparent;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	content: '';
+}
+.tab .tab-content {
+	background: #fff;
+	padding: 25px 40px;
+}
+ @media only screen and (max-width: 767px) {
+.tab .nav-tabs li {
+	margin: 0 25px 0 0;
+	width: 48%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.tab .tab-content {
+	background: #fff;
+	padding: 25px 15px;
+}
+.tab .nav-tabs li a {
+	padding: 10px 0;
+}
+.tab .nav-tabs li a i {
+	display: none;
+}
+.tab .nav-tabs li.active a:after, .tab .nav-tabs li a:hover:after {
+	display: none;
+}
+}
+.manage-search {
+	position: relative;
+	z-index: 999;
+}
+.manage-search .col-md-8 {
+	padding: 0;
+}
+.manage-search input {
+	background: #fff none repeat scroll 0 0;
+	border: 2px solid #de5c57;
+	border-radius: 5px;
+	color: #9e9c9c;
+	height: 42px;
+	outline: medium none;
+	padding: 0 120px;
+	width: 100%;
+}
+.manage-search button {
+	background: #de5c57 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	height: 42px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+}
+.manage-search .myselectType {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: medium none;
+	text-align: center;
+	cursor: pointer;
+	height: 38px;
+	position: absolute;
+	left: 4px;
+	top: 2px;
+	width: 100px;
+}
+.manage-search button::before {
+	color: #f9f0da;
+	content: '搜索';
+	font-size: 14px;
+}
+.select_box {
+	width: 80px;
+	padding-right: 20px;
+	background: url('../images/107.gif') no-repeat 60px center;
+	position: relative;
+	height: 38px;
+	line-height: 38px;
+}
+.select_box span {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.select_box ul li {
+	cursor: pointer;
+}
+.son_ul {
+	width: 80px;
+	position: absolute;
+	left: 0;
+	top: 38px;
+	background: #fff;
+}
+.son_ul li {
+	display: block;
+	width: 80px;
+}
+.hover {
+	background: #ccc;
+}
+.mt20 {
+	margin-top: 12px;
+}
+.manage-search .main-radio {
+	float: right;
+	width: 20px;
+	height: 20px;
+	background: #de5c57;
+	border-radius: 50%;
+	position: relative;
+	margin: 0px 0 0 5px;
+	border: 1px solid #de5c57;
+}
+.manage-search .main-radio label {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.manage-search .main-radio label:after {
+	content: "";
+	width: 10px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	border: 3px solid #fff;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.manage-search .main-radio input[type=radio] {
+	visibility: hidden;
+}
+.manage-search .main-radio input[type=radio]:checked + label:after {
+	opacity: 1;
+}
+.manage-search .text {
+	float: right;
+	line-height: 20px;
+	margin-left: 7px;
+	text-transform: capitalize;
+}
+.manage-list-box1 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dedcdc;
+}
+.manage-list-box1 h3 {
+	font-size: 16px;
+	margin-top: 15px;
+}
+.manage-list-box1 span {
+	display: inline-block;
+	margin-top: 10px;
+	color: #6d6c6c;
+	width: 100%;
+}
+.manage-list-box1 span b {
+	font-weight: normal;
+	color: #f4645f;
+	margin-right: 5px;
+}
+.manage-list-box1 p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #696868;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.manage-list1 {
+	width: 100%;
+	float: left;
+	margin-top: 35px;
+}
+.manage-list1 .excerpt-minic {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #dbdada;
+}
+.manage-list1 .cat {
+	padding: 15px 0px 15px 0;
+	text-align: right;
+}
+.manage-list1 .cat span {
+	font-size: 14px;
+	color: #535353;
+	margin-left: 20px;
+	transition: all ease .4s;
+}
+.manage-list1 .cat span:hover, .manage-list .cat span:hover a {
+	color: #f46560;
+}
+.manage-list1 .cat span i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.manage-list1 .cat span a {
+	vertical-align: middle;
+	color: #535353;
+}
+.manage-list1 .cat span {
+	margin-left: 0;
+	float: left;
+}
+.manage-list1 .cat .fr {
+	float: right;
+}
+.manage-list1 .cat span:nth-child(2) {
+	margin-left: 10px;
+}
+/*分类管理*/
+.tab-title h3 {
+	padding: 6px 0 6px 12px;
+	border-left: 3px solid #de5c57;
+	font-size: 16px;
+}
+.tab-title a {
+	padding: 12px 35px;
+	background: #de5c57;
+	color: #fff;
+	display: inline-block;
+	margin-top: 15px;
+}
+.tab-title a:hover {
+	color: #fff;
+}
+.tab .tab-content table {
+	background: white;
+	border-collapse: collapse;
+	margin: 1.25em 0 0;
+	width: 100%;
+}
+.tab .tab-content table tr, .tab .tab-content table th, .tab .tab-content table td {
+	border: none;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+}
+.tab .tab-content table th, .tab .tab-content table td {
+	padding: 10px 12px;
+	text-align: center;
+}
+.tab .tab-content table th {
+	background: #fc928e;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.tab .tab-content table tr td {
+	background: #ebebeb;
+	color: #999999;
+}
+.tab .tab-content table tr:nth-of-type(2n+2) td {
+	background: #ffffff;
+}
+.tab .tab-content table.bt thead, .tab .tab-content table.bt tbody th {
+	display: none;
+}
+.tab .tab-content table.bt tfoot th, .tab .tab-content table.bt tfoot td, .tab .tab-content table.bt tbody td {
+	border: none;
+	display: block;
+	vertical-align: top;
+}
+.tab .tab-content table.bt tfoot th:before, .tab .tab-content table.bt tfoot td:before, .tab .tab-content table.bt tbody td:before {
+	content: attr(data-th) ": ";
+	font-weight: bold;
+	width: 6.5em;
+	display: inline-block;
+}
+.tab .tab-content table.bt tfoot th.bt-hide, .tab .tab-content table.bt tfoot td.bt-hide, .tab .tab-content table.bt tbody td.bt-hide {
+	display: none;
+}
+.tab .tab-content table.bt tfoot th .bt-content, .tab .tab-content table.bt tfoot td .bt-content, .tab .tab-content table.bt tbody td .bt-content {
+	vertical-align: top;
+}
+.tab .tab-content .form-horizontal .form-control {
+	border-radius: 3px;
+	font-size: 12px;
+	height: 30px;
+	line-height: 1.5;
+	padding: 5px 10px;
+}
+.my-tab-ts {
+	line-height: 30px;
+	text-align: right;
+	padding-right: 35px;
+}
+.switch-btn {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 80px;
+	height: 30px;
+	border-radius: 18px;
+	cursor: pointer;
+}
+.checked-switch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.text-switch {
+	background-color: #ed5b49;
+	border: 1px solid #d2402e;
+	border-radius: inherit;
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	height: inherit;
+	position: relative;
+	text-transform: uppercase;
+}
+.text-switch:before, .text-switch:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+}
+.text-switch:before {
+	content: attr(data-no);
+	right: 11px;
+}
+.text-switch:after {
+	content: attr(data-yes);
+	left: 11px;
+	color: #FFFFFF;
+	opacity: 0;
+}
+.checked-switch:checked ~ .text-switch {
+	background-color: #00af2c;
+	border: 1px solid #068506;
+}
+.checked-switch:checked ~ .text-switch:before {
+	opacity: 0;
+}
+.checked-switch:checked ~ .text-switch:after {
+	opacity: 1;
+}
+.toggle-btn {
+	background: linear-gradient(#eee, #fafafa);
+	border-radius: 100%;
+	height: 28px;
+	left: 1px;
+	position: absolute;
+	top: 1px;
+	width: 28px;
+}
+.toggle-btn::before {
+	color: #aaaaaa;
+	content: "";
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: -2px;
+	padding: 4px 0;
+	vertical-align: middle;
+}
+.checked-switch:checked ~ .toggle-btn {
+	left: 51px;
+}
+
+.checkbox {
+    position: relative;
+    height: 30px;
+    margin:0;
+    text-align: right;
+    float: right;
+    width: 70px;
+}
+.checkbox input[type='checkbox'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+.checkbox label {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 0;
+}
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.checkbox label:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.checkbox input[type='checkbox']:checked + label:before {
+    background: #de5c57;
+    border-color: #de5c57;
+}
+.checkbox input[type='checkbox']:checked + label:after {
+    background: #de5c57;
+}
+
+.text-switch, .toggle-btn {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+.btn-edit {
+	color: #4097e2;
+	margin-right: 10px;
+}
+.btn-delete {
+	color: #de5c57;
+}
+/*基本资料*/
+.my-information {
+}
+.my-information .col-md-9 h3 {
+	font-size: 20px;
+	color: #181717;
+	margin-bottom: 30px;
+}
+.my-information .col-md-9 h3 span {
+	font-size: 14px;
+	color: #8a8a8a;
+}
+.my-information .col-md-9 label {
+	font-weight: normal;
+}
+/*单选框美化*/
+.magic-radio {
+  position: absolute;
+  display: none; }
+
+.magic-radio[disabled] {
+  cursor: not-allowed; }
+
+.magic-radio + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle; }
+  .magic-radio + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color; }
+  .magic-radio + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid #c0c0c0; }
+  .magic-radio + label:after {
+    position: absolute;
+    display: none;
+    content: ''; }
+
+.magic-radio[disabled] + label {
+  cursor: not-allowed;
+  color: #e4e4e4; }
+  .magic-radio[disabled] + label:hover,
+  .magic-radio[disabled] + label:before,
+  .magic-radio[disabled] + label:after {
+    cursor: not-allowed; }
+  .magic-radio[disabled] + label:hover:before {
+    border: 1px solid #e4e4e4;
+    animation-name: none; }
+  .magic-radio[disabled] + label:before {
+    border-color: #e4e4e4; }
+
+.magic-radio:checked + label:before {
+  animation-name: none; }
+
+.magic-radio:checked + label:after {
+  display: block; }
+
+
+
+.magic-radio + label:before {
+  border-radius: 3px; }
+
+.magic-radio + label:after {
+  top: 2px;
+  left: 7px;
+  box-sizing: border-box;
+  width: 6px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  border-top: 0;
+  border-left: 0; }
+
+.magic-radio:checked + label:before {
+  border: #de5c57;
+  background: #de5c57; }
+
+.magic-radio:checked[disabled] + label:before {
+  border: #c9e2f9;
+  background: #c9e2f9; }
+.checkbox-inline, .radio-inline{padding-left: 0;}
+/*手机适配媒体查询*/
+
+
+ @media only screen and ( max-width:768px ) {
+.Articles-tit h3 {
+	text-align: center;
+	display: block;
+}
+.Articles-box h3 {
+	margin-top: 10px;
+}
+.Articles-right a {
+	width: 100%;
+	text-align: center;
+}
+.Articles .cat {
+	padding-right: 0;
+}
+.Articles .cat span {
+	margin-left: 0;
+	float: left;
+}
+.Articles .cat span:nth-child(2) {
+	float: right;
+}
+.My-message {
+	margin-top: 20px
+}
+.My-message-btn button {
+	width: 100%;
+}
+.My-message ul {
+	margin-top: 20px;
+}
+.My-message ul li {
+	text-align: center;
+}
+.My-message ul li img {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+}
+.My-message ul li h3 {
+	margin-top: 10px;
+}
+.My-message ul li p {
+	text-align: left
+}
+.manage-search input {
+	padding: 0 80px;
+}
+.tab .tab-content table tr {
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+}
+.tab .tab-content table th, .tab .tab-content table td {
+	line-height: 34px;
+	padding: 0 12px;
+	text-align: left;
+}
+.my-information .col-md-9 {
+	margin-bottom: 20px;
+}
+}

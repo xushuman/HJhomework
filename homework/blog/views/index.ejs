@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的博客主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--width=device-width, initial-scale=1适当的绘制和触屏缩放;user-scalable=no禁用缩放-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--bootstrap官方样式-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--强跨浏览器表现的一致性css 重置样式-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--自用样式-->
+</head>
+
+<body>
+
+<%- include("header") %>
+
+<%- include("nav") %>
+
+<!-- 主体 -->
+<section class="container">
+
+    <!-- 摘录1 -->
+    <article class=" col-md-8">
+        <ul class="My-excerpt">
+            <% for(var i = 0; i < list.length; i++) { %>
+            <li class="excerpt-minic ">
+                <div class="My-excerpt-box">
+                    <h3><a href="#"><%=list[i].title%></a></h3>
+                    <span>作者：<b><%=list[i].author%></b>• <%=list[i].create_at%></span>
+                    <%if(list[i].img) {%>
+                    <img src="/uploads/<%=list[i].img%>"
+                         class="img-responsive"
+                             alt="实例剖析尼尔森十大交互设计原则在设计中的用法"
+                         title="实例剖析尼尔森十大交互设计原则在设计中的用法">
+                    <% } %>
+                    <p><%-list[i].content%></p>
+                    <a href="#" class="btn">阅读文章</a></div>
+                <div class="cat">
+                    <span>
+                        <i class="glyphicon glyphicon-heart"></i>
+                        <a href="#">阅读：<%=list[i].view%></a>
+                    </span>
+                </div>
+            </li>
+            <% } %>
+
+        </ul>
+        <% if(totalPage > 1) { %>
+        <ul class="pagination my-pagination">
+            <%if(page > 1) {%>
+                <li><a href="/?page=<%=parseInt(page)-1%>">&laquo;</a></li>
+            <% } %>
+            <li><a href="#">第<%=page%>页/共<%=totalPage%>页</a></li>
+            <%if(totalPage > page) {%>
+                <li><a href="/?page=<%= parseInt(page)+1%>">&raquo;</a></li>
+            <% } %>
+        </ul>
+        <% } %>
+    </article>
+    <!-- 侧边栏 -->
+    <aside class="sidebar  col-md-4">
+        <!-- 博主简介 -->
+        <div class="home-about excerpt-minic">
+            <div class="title">博主简介</div>
+            <div class="home-about-img"><img src="images/icon.jpg" alt=""></div>
+            <div class="home-about-text1"><b>王牛牛</b>
+                <p>百度资深UI设计师 </p>
+                <p>公众号：大牙的设计笔记</p>
+            </div>
+            <div class="home-about-text2">个人签名：成功者绝不放弃 放弃者绝不会成功。</div>
+        </div>
+        <!-- 个人标签 -->
+        <div class="home-label excerpt-minic">
+            <!-- 如不需要随机添加可删除下面jq 手动a标签添加tag1-10 -->
+            <div class="title">个人标签</div>
+            <a href="#" class="tooltip-test" data-toggle="tooltip" title="提示">手绘</a> <a href="#" class="tooltip-test"
+                                                                                        data-toggle="tooltip"
+                                                                                        title="PSD">PSD</a> <a href="#"
+                                                                                                               class="tooltip-test"
+                                                                                                               data-toggle="tooltip"
+                                                                                                               title="文字特效">文字特效</a>
+            <a href="#" class="tooltip-test" data-toggle="tooltip" title="调色">调色</a> <a href="#" class="tooltip-test"
+                                                                                        data-toggle="tooltip"
+                                                                                        title="前端">前端</a> <a href="#"
+                                                                                                             class="tooltip-test"
+                                                                                                             data-toggle="tooltip"
+                                                                                                             title="脚本">脚本</a>
+            <!-- 【class="tooltip-test" data-toggle="tooltip" title="脚本"】Tooltip提示插件 -->
+        </div>
+        <!-- 精选文章 -->
+        <div class="home-selected excerpt-minic">
+            <div class="title">精选文章</div>
+            <ul>
+                <li><img src="images/5431586.jpg" class="img-responsive">
+                    <h3><a href="#">越努力越幸运-字体效果设计（教程）</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+                <li><img src="images/5431586.jpg" class="img-responsive">
+                    <h3><a href="#">越努力越幸运-字体效果设计（教程）</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+            </ul>
+        </div>
+        <!-- 热门文章 -->
+        <div class="home-hot excerpt-minic">
+            <div class="title">热门文章</div>
+            <ul>
+                <li>
+                    <h3><a href="#">【回音小讲堂】五分钟画视幻 分享人啊啊啊啊</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+                <li>
+                    <h3><a href="#">【回音小讲堂】五分钟画视幻 分享人啊啊啊啊</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+                <li>
+                    <h3><a href="#">【回音小讲堂】五分钟画视幻 分享人啊啊啊啊</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+                <li>
+                    <h3><a href="#">【回音小讲堂】五分钟画视幻 分享人啊啊啊啊</a></h3>
+                    <p><span>2018-1-12</span><span><i class="glyphicon glyphicon-heart"></i><b>阅读：235</b></span></p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</section>
+
+<%- include("footer") %>
+
+<script src="js/jquery.min.js"></script><!--jquery-->
+<script src="js/bootstrap.min.js"></script><!--bootstrap官方js-->
+</body>
+</html>

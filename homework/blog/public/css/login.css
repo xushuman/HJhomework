@@ -1,0 +1,154 @@
+/* *
+* The css file of Beijing Jinjiuyuan Technology Co. Ltd..
+*
+* @copyright   Copyright 2009-2017 北京金九源科技有限公司(Beijing Jinjiuyuan Technology Co. Ltd.)
+* @license
+* @author      北京金九源科技有限公司
+* @package     Beijing Jinjiuyuan Technology Co. Ltd.
+* @version     $list$
+* @link
+* */
+/*链接login样式*/
+.login {
+	margin-top: 50px;
+}
+.form-horizontal {
+}
+.form-horizontal .heading {
+	display: block;
+	font-size: 30px;
+	font-weight: normal;
+	padding: 20px 0;
+	font-size: 20px;
+	color: #c65852;
+}
+.form-horizontal .form-group {
+	padding: 0 20px;
+	margin: 0 0 25px 0;
+	position: relative;
+ s
+}
+.form-horizontal .form-control {
+	border: none;
+	background: none;
+	border-radius: 0;
+	border-bottom: 1px solid #d7d7d7;
+	box-shadow: none;
+	padding: 0 25px 0 45px;
+	height: 50px;
+	transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus {
+	border-bottom: 1px solid #bcb6b6;
+	box-shadow: none;
+	outline: 0 none;
+}
+.form-horizontal .form-group i {
+	position: absolute;
+	top: 17px;
+	left: 40px;
+	font-size: 17px;
+	color: #c5c5c5;
+	transition : all 0.5s ease 0s;
+}
+.form-horizontal .form-control:focus + i {
+	color: #de5c57;
+}
+.form-horizontal .fa-question-circle {
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	right: 60px;
+	font-size: 20px;
+	color: #808080;
+	transition: all 0.5s ease 0s;
+}
+.form-horizontal .fa-question-circle:hover {
+	color: #000;
+}
+.form-horizontal .main-checkbox {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #de5c57;
+	border-radius: 50%;
+	position: relative;
+	margin: 5px 0 0 5px;
+	border: 1px solid #de5c57;
+}
+.form-horizontal .main-checkbox label {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.form-horizontal .main-checkbox label:after {
+	content: "";
+	width: 10px;
+	height: 5px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	border: 3px solid #fff;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.form-horizontal .main-checkbox input[type=checkbox] {
+	visibility: hidden;
+}
+.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+.form-horizontal .text {
+	float: left;
+	margin-left: 7px;
+	line-height: 20px;
+	padding-top: 5px;
+	text-transform: capitalize;
+}
+.form-horizontal .btn {
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	background: #de5c57;
+	border-radius: 30px;
+	padding: 10px 25px;
+	border: none;
+	text-transform: capitalize;
+	transition: all 0.5s ease 0s;
+}
+.form-control:focus {
+	border-color: #de5c57;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(222,92,87,.075), 0 0 8px rgba(222,92,87,.6);
+	box-shadow: inset 0 1px 1px rgba(222,92,87,.075), 0 0 8px rgba(222,92,87,.6)
+}
+ @media only screen and (max-width: 479px) {
+.form-horizontal .form-group {
+	padding: 0 25px;
+}
+.form-horizontal .form-group i {
+	left: 10px;
+}
+.form-horizontal .btn {
+	padding: 10px 20px;
+}
+.login {
+	margin-top: 30px;
+}
+.login .col-md-4 {
+	display: none;
+}
+.form-horizontal .form-group {
+	padding: 0;
+}
+.form-horizontal .heading {
+	text-align: center;
+}
+}
