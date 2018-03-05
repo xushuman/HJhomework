@@ -1,0 +1,150 @@
+/* *
+* The css file of Beijing Jinjiuyuan Technology Co. Ltd..
+*
+* @copyright   Copyright 2009-2017 北京金九源科技有限公司(Beijing Jinjiuyuan Technology Co. Ltd.)
+* @license
+* @author      北京金九源科技有限公司
+* @package     Beijing Jinjiuyuan Technology Co. Ltd.
+* @version     $list$
+* @link
+* */
+/*链接list样式*/
+.Articles-list-box {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #dedcdc;
+}
+.Articles-list-box h3 {
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+.Articles-list-box span {
+	display: inline-block;
+	margin-top: 10px;
+	color: #6d6c6c;
+	width: 100%;
+}
+.Articles-list-box span b {
+	font-weight: normal;
+	color: #f4645f;
+	margin-right: 5px;
+}
+.Articles-list-box p {
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 10px;
+}
+.Articles-list .cat {
+	padding: 15px 20px 15px 0;
+	text-align: right;
+}
+.Articles-list .cat span {
+	font-size: 14px;
+	color: #535353;
+	margin-left: 20px;
+	transition: all ease .4s;
+}
+.Articles-list .cat span:hover, .Articles-list .cat span:hover a {
+	color: #f46560;
+}
+.Articles-list .cat span i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.Articles-list .cat span a {
+	vertical-align: middle;
+	color: #535353;
+}
+.Articles-list-right {
+	text-align: right;
+}
+.Articles-list-right .btn {
+	display: inline-block;
+	padding: 7px 14px;
+	background: #f46560;
+	font-size: 14px;
+	color: #fff;
+}
+.Articles-list-box .btn:hover {
+	text-decoration: none;
+	background: #121212;
+	margin-left: 5px;
+	color: #fff;
+}
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+.Articles-list-box h3 {
+	margin-top: 10px;
+}
+.Articles-list-right a {
+	padding: 10px 40px;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+.Articles-list .cat {
+	padding-right: 0;
+}
+.Articles-list .cat span {
+	margin-left: 0;
+	float: left;
+}
+.Articles-list .cat span:nth-child(2) {
+	float: right;
+}
+}
+/*链接list1样式*/
+
+.Articles-list-box1 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dedcdc;
+}
+.Articles-list-box1 h3 {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin-top: 15px;
+}
+.Articles-list-box1 span {
+	display: inline-block;
+	margin-top: 10px;
+	color: #6d6c6c;
+	width: 100%;
+}
+.Articles-list-box1 span b {
+	font-weight: normal;
+	color: #f4645f;
+	margin-right: 5px;
+}
+.Articles-list-box1 p {
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.Articles-list1 .cat {
+	padding: 15px 0px 15px 0;
+	text-align: right;
+}
+.Articles-list1 .cat span {
+	font-size: 14px;
+	color: #535353;
+	margin-left: 20px;
+	transition: all ease .4s;
+}
+.Articles-list1 .cat span:hover, .Articles-list .cat span:hover a {
+	color: #f46560;
+}
+.Articles-list1 .cat span i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.Articles-list1 .cat span a {
+	vertical-align: middle;
+	color: #535353;
+}
+.Articles-list1 .cat span {
+	margin-left: 0;
+	float: left;
+}
+.Articles-list1 .cat span:nth-child(2) {
+	float: right;
+}

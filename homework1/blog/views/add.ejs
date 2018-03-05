@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的博客发布文章</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--width=device-width, initial-scale=1适当的绘制和触屏缩放;user-scalable=no禁用缩放-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--bootstrap官方样式-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!--强跨浏览器表现的一致性css 重置样式-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--自用样式-->
+</head>
+
+<body>
+
+<%- include("header") %>
+
+<%- include("nav") %>
+
+<!-- 主体 -->
+<section class="container ">
+    <form method="post" action="/article/add" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="h4"><span class="glyphicon glyphicon-user"></span>王妞妞</div>
+                    <div class="fileinput fileinput-new">
+                        <div class="fileinput-new thumbnail" id="preview"></div>
+                        <div> <span class="btn btn-primary btn-file my-file"> <span class="fileinput-new">选择文件</span>
+                <input type="file" onchange="preview(this)" name="img"/>
+                </span></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 my-form">
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">标题</label>
+                    <input class="form-control" placeholder="请输入标题" type="text" name="title">
+                    <p class="tit-Prompt">请输入标题</p>
+                </div>
+                <div class="mb20">
+                    <div class="col-md-6">
+                        <label for="exampleInputPassword1">文章分类</label>
+                        <select class="form-control" name="category_id">
+                            <% for(let i = 0; i < category.length; i++) { %>
+                            <option value="<%= category[i]._id %>"><%= category[i].name %></option>
+                            <% } %>
+                        </select>
+                        <p class="tit-Prompt">请选择类型</p>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputPassword1">原作者</label>
+                        <input class="form-control " placeholder="请输入原作者" type="text" name="author">
+                        <p class="tit-Prompt">请输入原作者</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">精华文章</label>
+                    <div class="col-md-6">
+                        <div class="radio-inline">
+                            <input class="magic-radio" type="radio" name="is_jing" id="r1" value="0">
+                            <label for="r1">是</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="magic-radio" type="radio" name="is_jing" id="r2" value="0" checked>
+                            <label for="r2">否</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row my-content">
+            <div class="form-group">
+                <label><b>文章正文</b> 在这里填写详细的文章内容分享给大家</label>
+                <textarea id="content-area" style="display: none;" class="form-control" rows="3" name="content"></textarea>
+                <div id="content-div" style="background-color: white"></div>
+            </div>
+        </div>
+        <div class="my-button">
+            <!--<button type="button" class="btn btn-warning "> 立即保存</button>-->
+            <button type="submit" class="btn btn-danger  "> 立即发布</button>
+        </div>
+    </form>
+</section>
+
+<%- include("footer") %>
+
+<script src="/js/jquery.min.js"></script><!--jquery-->
+<script src="/js/bootstrap.min.js"></script><!--bootstrap官方js-->
+<script type="text/javascript" src="//unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+<script type="text/javascript">
+
+    var E = window.wangEditor
+    var editor = new E('#content-div')
+    //editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+    editor.customConfig.uploadImgServer = '/upload';
+    editor.customConfig.uploadFileName = 'img'
+    var $text1 = $('#content-area')
+    editor.customConfig.onchange = function (html) {
+        // 监控变化，同步更新到 textarea
+        $text1.val(html)
+    }
+    editor.create()
+    // 初始化 textarea 的值
+    $text1.val(editor.txt.html())
+
+
+    //图片上传预览
+    function preview(file) {
+        var prevDiv = document.getElementById('preview');
+        if (file.files && file.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (evt) {
+                prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';
+            }
+            reader.readAsDataURL(file.files[0]);
+        } else {
+            prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';
+        }
+    }
+</script>
+</body>
+</html>

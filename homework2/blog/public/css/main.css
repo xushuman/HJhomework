@@ -1,0 +1,508 @@
+/* *
+* The css file of Beijing Jinjiuyuan Technology Co. Ltd..
+*
+* @copyright   Copyright 2009-2017 北京金九源科技有限公司(Beijing Jinjiuyuan Technology Co. Ltd.)
+* @license
+* @author      北京金九源科技有限公司
+* @package     Beijing Jinjiuyuan Technology Co. Ltd.
+* @version     $main$
+* @link
+* */
+/*链接列表页样式*/
+@import url(../css/list.css);
+/*链接文章页样式*/
+@import url(../css/articles.css);
+/*登录页页样式*/
+@import url(../css/login.css);
+/*发布文章样式*/
+@import url(../css/publish.css);
+
+
+
+
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	padding: 0;
+}
+}
+/*头部展示*/
+a {
+	transition: all .4s ease;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #f46560;
+}
+header {
+	padding: 80px 0;
+	background: url(../images/headerbg.jpg) no-repeat scroll 0 0;
+}
+header h3 {
+	font-size: 3em;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 10px;
+}
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+header h3 {
+	font-size: 28px;
+}
+}
+/*导航*/
+.My-navbar {
+	min-height: 60px;
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 2px solid #e1e1e1;
+	border-top: 1px solid #ebebeb;
+	border-left: 0;
+	border-right: 0;
+	margin-bottom: 35px;
+}
+.My-navbar .navbar-nav > li > a {
+	padding: 0 40px;
+	line-height: 60px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.My-navbar .navbar-nav > li > a:hover {
+	background: none;
+	color: #cb524f;
+}
+.My-navbar .navbar-nav > .active > a, .My-navbar .navbar-nav > .active > a:focus, .My-navbar .navbar-nav > .active > a:hover {
+	background: none;
+	color: #cb524f;
+}
+/*发布按钮*/
+.Release-link {
+	margin: 12px 15px 0 0;
+}
+/*导航-搜索*/
+.My-search {
+	margin: 12px -15px 0 0;
+}
+.My-search .form-group {
+	float: left;
+}
+.My-search .form-control {
+	border-radius: 0;
+}
+.My-search .btn-default {
+	border-radius: 0;
+	background: #de5c57;
+	border: none;
+	color: #fff;
+	float: left;
+	padding: 7px 12px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	color: #cb524f;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: #cb524f;
+}
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+.navbar-toggle {
+	float: none;
+}
+.My-navbar {
+	text-align: center;
+}
+.My-navbar .navbar-nav > li > a {
+	font-size: 14px;
+	line-height: 40px;
+	text-align: left;
+}
+.My-search {
+	margin: 12px -15px 0 0;
+	padding: 0;
+	border-top: 1px solid #ddd;
+	border-bottom: none;
+	display: inline-block;
+}
+.Release-link {
+	margin: 12px 15px 0 0;
+	padding-bottom: 20px;
+}
+.navbar-nav {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+}
+.form-control {
+	border-radius: 0
+}
+/*首页主体*/
+.content-wrap {
+	float: left;
+	min-height: 1000px;
+	width: 100%;
+}
+.sidebar {
+}
+/*主体区块*/
+.excerpt-minic {
+	background-color: #fff;
+	margin-bottom: 35px;
+	overflow: hidden;
+	padding: 30px 28px;
+	border: 1px solid #ddd;
+}
+/*首页摘要*/
+.My-excerpt-box {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #dedcdc;
+}
+.My-excerpt-box h3 {
+	font-size: 2em;
+	line-height: 1.2em;
+	margin-top: 20px;
+	text-align: center;
+	display: block;
+}
+.My-excerpt-box span {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+	width: 100%;
+}
+.My-excerpt-box span b {
+	font-weight: normal;
+	color: #f4645f;
+	margin-right: 5px;
+}
+.My-excerpt-box img {
+	margin-top: 20px;
+}
+.My-excerpt-box p {
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.My-excerpt-box .btn {
+	display: inline-block;
+	padding: 7px 14px;
+	background: #f46560;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 0;
+}
+.My-excerpt-box .btn:hover {
+	text-decoration: none;
+	background: #121212;
+	margin-left: 5px;
+}
+.My-excerpt .cat {
+	padding: 15px 20px 15px 0;
+	text-align: right;
+}
+.My-excerpt .cat span {
+	font-size: 14px;
+	color: #535353;
+	margin-left: 20px;
+	transition: all ease .4s;
+}
+.My-excerpt .cat span i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.My-excerpt .cat span a {
+	vertical-align: middle;
+	color: #535353;
+}
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+.My-excerpt-box h3 {
+	margin-top: 20px;
+	text-align: center;
+	display: block;
+	white-space: normal;
+	overflow: visible;
+	text-overflow: ellipsis;
+}
+.My-excerpt .cat {
+	padding-right: 0;
+}
+.My-excerpt .cat span {
+	margin-left: 0;
+	float: left;
+}
+.My-excerpt .cat span:nth-child(2) {
+	float: right;
+}
+.My-excerpt-box .btn {
+	padding: 10px 40px;
+	width: 100%;
+	text-align: center;
+}
+}
+/*侧边栏-通用标题*/
+
+.title {
+	position: relative;
+	padding: 0px 0 15px 0px;
+	font-size: 1.5em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 25px;
+}
+.title:before {
+	content: '';
+	width: 90px;
+	height: 1px;
+	background: #de5c57;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/*侧边栏-博主简介*/
+.home-about {
+	padding: 21px 30px;
+}
+.home-about-img, .home-about-text1, .home-about-text2 {
+	text-align: center;
+}
+.home-about-img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.home-about-text1 {
+	background: #de5c57;
+	padding: 20px 0;
+	color: #fff;
+	margin-top: 15px;
+}
+.home-about-text1 b {
+	font-size: 16px;
+}
+.home-about-text1 p {
+	margin-top: 15px;
+}
+.home-about-text2 {
+	font-size: 14px;
+	margin-top: 15px;
+}
+/*侧边栏-个人标签*/
+.home-label {
+	margin-top: 20px;
+	text-align: center;
+}
+.home-label .title {
+	text-align: left;
+}
+.home-label a {
+	font-size: 12px;
+	color: #fff;
+	padding: 4px 25px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 12px;
+}
+.home-label .tags0 {
+	background: #67a2d4;
+}
+.home-label .tags1 {
+	background: #7cc67c;
+}
+.home-label .tags2 {
+	background: #e07572;
+}
+.home-label .tags3 {
+	background: #5f8fab;
+}
+.home-label .tags4 {
+	background: #c35bff;
+}
+.home-label .tags5 {
+	background: #33bbba;
+}
+.home-label .tags6 {
+	background: #59a5f7;
+}
+.home-label .tags7 {
+	background: #f759f5;
+}
+.home-label .tags8 {
+	background: #f759ba;
+}
+.home-label .tags9 {
+	background: #f75989;
+}
+.home-label .tags10 {
+	background: #f7bd59;
+}
+/*home-selected精选文章-home-hot热门文章*/
+.home-selected {
+}
+.home-selected ul li, .home-hot ul li {
+	margin-bottom: 20px;
+}
+.home-selected ul li h3 {
+	margin-top: 20px;
+}
+.home-selected ul li h3 a, .home-hot ul li h3 a {
+	font-size: 16px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.home-selected ul li h3 a:hover, .home-hot ul li h3 a:hover {
+	margin-left: 5px;
+}
+.home-selected .cat {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #7d7b7b;
+}
+.home-selected p, .home-hot p {
+	margin-top: 15px;
+	color: #c7c2c2;
+}
+.home-selected p span:nth-child(2), .home-hot p span:nth-child(2) {
+	float: right;
+	line-height: 15px;
+}
+.home-selected p span:nth-child(2) i, .home-hot p span:nth-child(2) i {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.home-selected p span:nth-child(2) b, .home-hot p span:nth-child(2) b {
+	vertical-align: middle;
+	font-weight: normal;
+}
+/*自定义分页*/
+.my-pagination {
+	text-align: center;
+	width: 100%;
+}
+.my-pagination > li > a {
+	text-align: center;
+	float: none;
+	color: #333;
+}
+.my-pagination > li > a:hover {
+	color: #f4645f;
+}
+.my-pagination > .active a {
+	background: #f4645f;
+	border: #f4645f 1px solid;
+}
+
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+.home-selected ul li h3 a, .home-hot ul li h3 a {
+	display: block;
+	font-size: 14px;
+	overflow: visible;
+	text-overflow: ellipsis;
+	white-space: normal;
+	line-height: 22px;
+}
+}
+/*footer*/
+
+footer {
+	margin-top: 100px;
+	background: #121212;
+	height: 245px;
+	padding: 30px 0;
+}
+.footer-l {
+}
+.footer-l-text {
+	font-size: 14px;
+	color: #a2a0a0;
+}
+.footer-l-text p {
+	margin-bottom: 15px;
+}
+.footer-l h3 {
+	font-size: 1.5em;
+	color: #ffffff;
+	height: 50px;
+	border-bottom: 1px solid #454444;
+	margin-bottom: 25px;
+	position: relative;
+}
+.footer-l h3::before {
+	background: #f4645f none repeat scroll 0 0;
+	bottom: -1px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 90px;
+}
+.footer-r {
+	text-align: right;
+}
+.footer-r ul {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #454444;
+	margin-bottom: 25px;
+	padding-left: 25px;
+	box-sizing: border-box;
+	position: relative;
+}
+.footer-r ul li {
+	float: left;
+	margin-right: 100px;
+}
+.footer-r ul li a {
+	font-size: 16px;
+	color: #bebdbd;
+}
+.footer-r ul li a:hover {
+	color: #f46560;
+}
+.footer-r-text img {
+	float: left;
+	margin-right: 20px;
+	width: 160px;
+	height: 90px;
+}
+.footer-r-text h3 {
+	font-size: 14px;
+	color: #fff;
+	line-height: 22px;
+}
+.footer-r-text span {
+	margin-top: 30px;
+	display: inline-block;
+	color: #8d8c8c;
+	font-size: 12px;
+}
+.footer-r-copyright {
+	color: #bebdbd;
+}
+
+/*手机适配媒体查询*/
+ @media only screen and ( max-width:768px ) {
+footer {
+	height: auto;
+	margin-top: 30px;
+}
+.footer-l h3 {
+	font-size: 16px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.footer-r ul {
+	display: none;
+}
+.footer-r-text {
+	display: none;
+}
+.footer-r-copyright {
+	text-align: left;
+	border-top: 1px solid #454444;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+}
